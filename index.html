@@ -3,233 +3,1200 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="कनक महिला ग्रामीण बिगरशेती सहकारी पतसंस्था मर्या., पंढरपूर - Gold Loan आणि ठेव योजना.">
-  <title>कनक महिला ग्रामीण बिगरशेती सहकारी पतसंस्था मर्या. | पंढरपूर</title>
+
+  <title>कनक महिला ग्रामीण बिगरशेती सहकारी पतसंस्था मर्या.</title>
+
+  <meta name="description" content="कनक महिला ग्रामीण बिगरशेती सहकारी पतसंस्था मर्या. — विश्वास, बचत आणि आर्थिक प्रगतीसाठी आपली विश्वासू संस्था.">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Noto Sans Devanagari", sans-serif;
+      background: #f7f9fc;
+      color: #172033;
+      line-height: 1.7;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* ================= HEADER ================= */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255,255,255,0.97);
+      box-shadow: 0 3px 18px rgba(0,0,0,0.08);
+    }
+
+    .navbar {
+      max-width: 1200px;
+      margin: auto;
+      min-height: 78px;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #8b1e1e, #d99b24);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 25px;
+      font-weight: 800;
+      box-shadow: 0 5px 15px rgba(139,30,30,0.25);
+    }
+
+    .brand-text h2 {
+      font-size: 18px;
+      color: #8b1e1e;
+      line-height: 1.25;
+    }
+
+    .brand-text span {
+      font-size: 12px;
+      color: #666;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+    }
+
+    nav a {
+      padding: 9px 12px;
+      font-size: 14px;
+      font-weight: 600;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      background: #fff2df;
+      color: #8b1e1e;
+    }
+
+    .menu-btn {
+      display: none;
+      border: 0;
+      background: #8b1e1e;
+      color: white;
+      font-size: 25px;
+      border-radius: 8px;
+      padding: 5px 11px;
+      cursor: pointer;
+    }
+
+    /* ================= HERO ================= */
+
+    .hero {
+      min-height: 650px;
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 85% 20%, rgba(218,167,65,0.25), transparent 30%),
+        linear-gradient(135deg, #681313 0%, #941f1f 52%, #b66a20 100%);
+      color: white;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      width: 450px;
+      height: 450px;
+      border: 70px solid rgba(255,255,255,0.06);
+      border-radius: 50%;
+      right: -130px;
+      bottom: -160px;
+    }
+
+    .hero-container {
+      width: min(1200px, 92%);
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1.25fr 0.75fr;
+      align-items: center;
+      gap: 50px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-content .small-title {
+      display: inline-block;
+      background: rgba(255,255,255,0.14);
+      border: 1px solid rgba(255,255,255,0.25);
+      padding: 7px 15px;
+      border-radius: 30px;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      font-size: clamp(32px, 5vw, 58px);
+      line-height: 1.2;
+      margin-bottom: 22px;
+      font-weight: 800;
+    }
+
+    .hero h1 span {
+      color: #ffd875;
+    }
+
+    .hero p {
+      font-size: 18px;
+      max-width: 650px;
+      color: #fff7e7;
+      margin-bottom: 30px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 13px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 13px 22px;
+      border-radius: 9px;
+      font-weight: 700;
+      transition: 0.3s;
+    }
+
+    .btn-primary {
+      background: #ffd166;
+      color: #631414;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+
+    .btn-light {
+      border: 1px solid rgba(255,255,255,0.5);
+      color: white;
+    }
+
+    .btn-light:hover {
+      background: white;
+      color: #8b1e1e;
+    }
+
+    .hero-card {
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.22);
+      backdrop-filter: blur(10px);
+      border-radius: 25px;
+      padding: 35px;
+      text-align: center;
+      box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+    }
+
+    .hero-card .big-icon {
+      font-size: 70px;
+      margin-bottom: 10px;
+    }
+
+    .hero-card h3 {
+      font-size: 25px;
+      margin-bottom: 8px;
+    }
+
+    .hero-card p {
+      font-size: 15px;
+      margin: 0;
+    }
+
+    /* ================= COMMON ================= */
+
+    section {
+      padding: 90px 20px;
+    }
+
+    .container {
+      width: min(1120px, 92%);
+      margin: auto;
+    }
+
+    .section-heading {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .section-heading .tag {
+      color: #b27718;
+      font-weight: 800;
+      font-size: 14px;
+      letter-spacing: 0.5px;
+    }
+
+    .section-heading h2 {
+      font-size: 36px;
+      color: #761818;
+      margin: 8px 0 10px;
+    }
+
+    .section-heading p {
+      color: #6d7280;
+      max-width: 680px;
+      margin: auto;
+    }
+
+    /* ================= ABOUT ================= */
+
+    #about {
+      background: white;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 45px;
+      align-items: center;
+    }
+
+    .about-box {
+      background: #fff9ef;
+      padding: 30px;
+      border-radius: 20px;
+      border-left: 5px solid #c68a27;
+    }
+
+    .about-box h3 {
+      color: #7c1818;
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+
+    .about-box p {
+      color: #555;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+    }
+
+    .feature {
+      background: white;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.07);
+      border: 1px solid #eee;
+    }
+
+    .feature-icon {
+      font-size: 30px;
+      margin-bottom: 5px;
+    }
+
+    .feature h4 {
+      color: #7b1717;
+      margin-bottom: 4px;
+    }
+
+    .feature p {
+      font-size: 13px;
+      color: #666;
+    }
+
+    /* ================= SCHEMES ================= */
+
+    #schemes {
+      background: #f7f9fc;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 18px;
+      padding: 30px 25px;
+      box-shadow: 0 8px 28px rgba(0,0,0,0.07);
+      border: 1px solid #eee;
+      transition: 0.3s;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      height: 4px;
+      left: 0;
+      right: 0;
+      top: 0;
+      background: linear-gradient(90deg,#8b1e1e,#d49a25);
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 18px 40px rgba(0,0,0,0.11);
+    }
+
+    .card-icon {
+      font-size: 42px;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      color: #7c1717;
+      font-size: 21px;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #666;
+      font-size: 14px;
+    }
+
+    .rate {
+      display: inline-block;
+      margin-top: 15px;
+      background: #fff0ce;
+      color: #865a0e;
+      padding: 7px 12px;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    /* ================= GOLD LOAN ================= */
+
+    #gold-loan {
+      background: linear-gradient(135deg,#fff8e8,#fff);
+    }
+
+    .gold-box {
+      background: linear-gradient(135deg,#8b1e1e,#b66d20);
+      color: white;
+      border-radius: 25px;
+      padding: 50px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+      box-shadow: 0 20px 45px rgba(107,29,29,0.18);
+    }
+
+    .gold-box h2 {
+      font-size: 35px;
+      margin-bottom: 15px;
+    }
+
+    .gold-box p {
+      color: #fff6e5;
+    }
+
+    .gold-list {
+      margin-top: 20px;
+      display: grid;
+      gap: 10px;
+    }
+
+    .gold-list div {
+      background: rgba(255,255,255,0.11);
+      padding: 10px 14px;
+      border-radius: 8px;
+    }
+
+    .gold-highlight {
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 20px;
+      padding: 30px;
+      text-align: center;
+    }
+
+    .gold-highlight .icon {
+      font-size: 75px;
+    }
+
+    /* ================= CONTACT ================= */
+
+    #contact {
+      background: white;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+    }
+
+    .contact-card {
+      padding: 30px;
+      border-radius: 20px;
+      background: #fff9ef;
+      border: 1px solid #f1dfc0;
+    }
+
+    .contact-item {
+      display: flex;
+      gap: 15px;
+      align-items: flex-start;
+      padding: 15px 0;
+      border-bottom: 1px solid #eadfcf;
+    }
+
+    .contact-item:last-child {
+      border-bottom: 0;
+    }
+
+    .contact-item .icon {
+      font-size: 25px;
+    }
+
+    .contact-item h4 {
+      color: #7c1717;
+      margin-bottom: 2px;
+    }
+
+    .contact-item p,
+    .contact-item a {
+      color: #555;
+      font-size: 14px;
+    }
+
+    .contact-buttons {
+      margin-top: 20px;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .whatsapp {
+      background: #198754;
+      color: white;
+    }
+
+    .call {
+      background: #8b1e1e;
+      color: white;
+    }
+
+    /* ================= FOOTER ================= */
+
+    footer {
+      background: #4d0e0e;
+      color: white;
+      padding: 45px 20px 20px;
+    }
+
+    .footer-grid {
+      width: min(1120px,92%);
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1.3fr 1fr 1fr;
+      gap: 40px;
+    }
+
+    footer h3 {
+      color: #ffd166;
+      margin-bottom: 12px;
+    }
+
+    footer p,
+    footer a {
+      color: #eadcdc;
+      font-size: 14px;
+    }
+
+    footer a {
+      display: block;
+      margin: 5px 0;
+    }
+
+    .copyright {
+      width: min(1120px,92%);
+      margin: 30px auto 0;
+      padding-top: 18px;
+      border-top: 1px solid rgba(255,255,255,0.15);
+      text-align: center;
+      font-size: 13px;
+      color: #cdbbbb;
+    }
+
+    /* ================= MOBILE ================= */
+
+    @media(max-width: 850px) {
+
+      .menu-btn {
+        display: block;
+      }
+
+      nav {
+        display: none;
+        position: absolute;
+        top: 78px;
+        left: 0;
+        right: 0;
+        background: white;
+        padding: 15px 20px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      nav.active {
+        display: flex;
+      }
+
+      nav a {
+        padding: 12px;
+      }
+
+      .hero {
+        min-height: auto;
+        padding: 90px 0;
+      }
+
+      .hero-container,
+      .about-grid,
+      .gold-box,
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-card {
+        max-width: 450px;
+        margin: auto;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 65px 15px;
+      }
+
+      .section-heading h2 {
+        font-size: 30px;
+      }
+
+      .gold-box {
+        padding: 30px 22px;
+      }
+    }
+
+    @media(max-width: 500px) {
+
+      .brand-text h2 {
+        font-size: 14px;
+      }
+
+      .brand-text span {
+        font-size: 10px;
+      }
+
+      .logo {
+        width: 44px;
+        height: 44px;
+        font-size: 21px;
+      }
+
+      .hero h1 {
+        font-size: 34px;
+      }
+
+      .hero p {
+        font-size: 16px;
+      }
+
+      .features {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-buttons .btn {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  </style>
 </head>
 
 <body>
-  <header class="header">
-    <div class="container nav-wrap">
-      <a class="brand" href="#home">
-        <img src="logo.jpg" alt="कनक पतसंस्था लोगो">
-        <div>
-          <h1>कनक महिला ग्रामीण बिगरशेती सहकारी पतसंस्था मर्या.</h1>
-          <span>पंढरपूर</span>
+
+<!-- ================= HEADER ================= -->
+
+<header>
+  <div class="navbar">
+
+    <a href="#home" class="brand">
+      <div class="logo">क</div>
+
+      <div class="brand-text">
+        <h2>कनक महिला ग्रामीण<br>बिगरशेती सहकारी पतसंस्था मर्या.</h2>
+        <span>विश्वास • बचत • प्रगती</span>
+      </div>
+    </a>
+
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+    <nav id="nav">
+      <a href="#home" onclick="closeMenu()">मुख्यपृष्ठ</a>
+      <a href="#about" onclick="closeMenu()">आमच्याबद्दल</a>
+      <a href="#schemes" onclick="closeMenu()">ठेव योजना</a>
+      <a href="#gold-loan" onclick="closeMenu()">Gold Loan</a>
+      <a href="#contact" onclick="closeMenu()">संपर्क</a>
+    </nav>
+
+  </div>
+</header>
+
+
+<!-- ================= HOME ================= -->
+
+<section class="hero" id="home">
+
+  <div class="hero-container">
+
+    <div class="hero-content">
+
+      <div class="small-title">
+        🌸 आपली विश्वासू आर्थिक संस्था
+      </div>
+
+      <h1>
+        आर्थिक प्रगतीचा<br>
+        <span>विश्वासू साथीदार</span>
+      </h1>
+
+      <p>
+        बचत, ठेव आणि कर्ज सुविधांच्या माध्यमातून
+        आपल्या आर्थिक स्वप्नांना योग्य दिशा देण्यासाठी
+        आम्ही सदैव आपल्या सोबत आहोत.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#schemes" class="btn btn-primary">
+          💰 ठेव योजना पाहा
+        </a>
+
+        <a href="#contact" class="btn btn-light">
+          📞 आमच्याशी संपर्क करा
+        </a>
+      </div>
+
+    </div>
+
+
+    <div class="hero-card">
+
+      <div class="big-icon">🏦</div>
+
+      <h3>कनक महिला ग्रामीण</h3>
+
+      <p>
+        बिगरशेती सहकारी पतसंस्था मर्या.
+      </p>
+
+      <br>
+
+      <p>
+        <strong>विश्वासाने बचत करा,<br>
+        आत्मविश्वासाने प्रगती करा.</strong>
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section id="about">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <div class="tag">आमच्याबद्दल</div>
+
+      <h2>आपला विश्वास, आमची जबाबदारी</h2>
+
+      <p>
+        आर्थिक सुरक्षितता आणि प्रगतीसाठी विश्वासार्ह
+        सेवा देण्याचा आमचा सतत प्रयत्न आहे.
+      </p>
+
+    </div>
+
+
+    <div class="about-grid">
+
+      <div class="about-box">
+
+        <h3>कनक महिला ग्रामीण बिगरशेती सहकारी पतसंस्था मर्या.</h3>
+
+        <p>
+          आपल्या आर्थिक गरजा समजून घेऊन बचत,
+          ठेव आणि कर्ज सुविधांद्वारे आर्थिक प्रगतीला
+          चालना देणे हे आमचे प्रमुख उद्दिष्ट आहे.
+        </p>
+
+        <br>
+
+        <p>
+          पारदर्शक व्यवहार, विश्वासार्ह सेवा आणि
+          ग्राहक-केंद्रित दृष्टिकोनातून आपल्या आर्थिक
+          भविष्यासाठी आम्ही प्रयत्नशील आहोत.
+        </p>
+
+      </div>
+
+
+      <div class="features">
+
+        <div class="feature">
+          <div class="feature-icon">🤝</div>
+          <h4>विश्वास</h4>
+          <p>विश्वासार्ह आणि पारदर्शक सेवा.</p>
         </div>
+
+        <div class="feature">
+          <div class="feature-icon">🔒</div>
+          <h4>सुरक्षितता</h4>
+          <p>आपल्या आर्थिक व्यवहारांना महत्त्व.</p>
+        </div>
+
+        <div class="feature">
+          <div class="feature-icon">💰</div>
+          <h4>बचत</h4>
+          <p>बचतीला प्रोत्साहन देणाऱ्या योजना.</p>
+        </div>
+
+        <div class="feature">
+          <div class="feature-icon">📈</div>
+          <h4>प्रगती</h4>
+          <p>आर्थिक विकासासाठी योग्य सुविधा.</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= SCHEMES ================= -->
+
+<section id="schemes">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <div class="tag">आर्थिक योजना</div>
+
+      <h2>आमच्या ठेव योजना</h2>
+
+      <p>
+        आपल्या बचतीला योग्य दिशा देण्यासाठी
+        विविध ठेव सुविधांचा लाभ घ्या.
+      </p>
+
+    </div>
+
+
+    <div class="cards">
+
+      <div class="card">
+
+        <div class="card-icon">💰</div>
+
+        <h3>बचत ठेव</h3>
+
+        <p>
+          नियमित बचतीची सवय लावण्यासाठी
+          उपयुक्त ठेव सुविधा.
+        </p>
+
+        <span class="rate">सोपे व सुरक्षित बचत</span>
+
+      </div>
+
+
+      <div class="card">
+
+        <div class="card-icon">🏦</div>
+
+        <h3>मुदत ठेव</h3>
+
+        <p>
+          ठराविक कालावधीसाठी बचत करून
+          आपल्या आर्थिक नियोजनाला मजबूत आधार द्या.
+        </p>
+
+        <span class="rate">12% वार्षिक ठेव*</span>
+
+      </div>
+
+
+      <div class="card">
+
+        <div class="card-icon">📅</div>
+
+        <h3>आवर्ती ठेव</h3>
+
+        <p>
+          दर महिन्याला ठराविक रक्कम जमा करून
+          भविष्यासाठी नियोजनबद्ध बचत करा.
+        </p>
+
+        <span class="rate">नियमित बचतीचा पर्याय</span>
+
+      </div>
+
+    </div>
+
+    <p style="text-align:center;margin-top:25px;font-size:12px;color:#777;">
+      * व्याजदर व अटी संस्थेच्या नियमानुसार लागू होतील.
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- ================= GOLD LOAN ================= -->
+
+<section id="gold-loan">
+
+  <div class="container">
+
+    <div class="gold-box">
+
+      <div>
+
+        <div class="section-heading" style="text-align:left;margin-bottom:20px;">
+
+          <div class="tag" style="color:#ffd166;">
+            सोपी कर्ज सुविधा
+          </div>
+
+          <h2 style="color:white;">
+            🪙 Gold Loan
+          </h2>
+
+        </div>
+
+        <p>
+          आपल्या गरजेच्या वेळी सोन्याच्या तारणावर
+          कर्जाची सुविधा मिळवण्यासाठी आमच्याशी संपर्क करा.
+        </p>
+
+
+        <div class="gold-list">
+
+          <div>✓ सोपी प्रक्रिया</div>
+
+          <div>✓ जलद सेवा</div>
+
+          <div>✓ पारदर्शक व्यवहार</div>
+
+          <div>✓ आपल्या गरजेनुसार कर्ज सुविधा</div>
+
+        </div>
+
+        <br>
+
+        <a href="#contact" class="btn btn-primary">
+          📞 अधिक माहितीसाठी संपर्क
+        </a>
+
+      </div>
+
+
+      <div class="gold-highlight">
+
+        <div class="icon">💍</div>
+
+        <h3>
+          आपल्या गरजेच्या वेळी
+          आर्थिक आधार
+        </h3>
+
+        <p>
+          Gold Loan संबंधी व्याजदर,
+          पात्रता, कागदपत्रे व इतर अटींसाठी
+          संस्थेशी संपर्क साधा.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact">
+
+  <div class="container">
+
+    <div class="section-heading">
+
+      <div class="tag">संपर्क</div>
+
+      <h2>आमच्याशी संपर्क करा</h2>
+
+      <p>
+        अधिक माहितीसाठी किंवा सेवांबाबत चौकशी करण्यासाठी
+        आमच्याशी थेट संपर्क साधा.
+      </p>
+
+    </div>
+
+
+    <div class="contact-grid">
+
+      <div class="contact-card">
+
+        <div class="contact-item">
+
+          <div class="icon">📞</div>
+
+          <div>
+            <h4>फोन</h4>
+
+            <a href="tel:9922015399">
+              9922015399
+            </a>
+
+            <br>
+
+            <a href="tel:8999151757">
+              8999151757
+            </a>
+
+            <br>
+
+            <a href="tel:7276715399">
+              7276715399
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div class="contact-item">
+
+          <div class="icon">📧</div>
+
+          <div>
+
+            <h4>ई-मेल</h4>
+
+            <a href="mailto:kanakpatsanstha@gmail.com">
+              kanakpatsanstha@gmail.com
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div class="contact-item">
+
+          <div class="icon">📍</div>
+
+          <div>
+
+            <h4>पत्ता</h4>
+
+            <p>
+              कनक महिला ग्रामीण बिगरशेती
+              सहकारी पतसंस्था मर्या.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="contact-buttons">
+
+          <a class="btn call" href="tel:9922015399">
+            📞 कॉल करा
+          </a>
+
+          <a class="btn whatsapp"
+             href="https://wa.me/919922015399"
+             target="_blank">
+            💬 WhatsApp
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div class="contact-card">
+
+        <h3 style="color:#7c1717;margin-bottom:15px;">
+          📍 आमचे स्थान
+        </h3>
+
+        <p style="color:#666;margin-bottom:20px;">
+          कार्यालयाचा अचूक पत्ता आणि Google Maps
+          location येथे जोडता येईल.
+        </p>
+
+        <a
+          href="https://www.google.com/maps/search/?api=1&query=Pandharpur,Maharashtra"
+          target="_blank"
+          class="btn btn-primary"
+        >
+          🗺️ Google Maps वर पहा
+        </a>
+
+        <div style="
+          margin-top:25px;
+          background:white;
+          border-radius:15px;
+          padding:20px;
+          text-align:center;
+          border:1px solid #eee;
+        ">
+          <div style="font-size:55px;">📍</div>
+          <strong style="color:#7c1717;">
+            कनक महिला ग्रामीण बिगरशेती
+            सहकारी पतसंस्था मर्या.
+          </strong>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+  <div class="footer-grid">
+
+    <div>
+
+      <h3>कनक महिला ग्रामीण</h3>
+
+      <p>
+        बिगरशेती सहकारी पतसंस्था मर्या.
+      </p>
+
+      <p style="margin-top:10px;">
+        विश्वास • बचत • प्रगती
+      </p>
+
+    </div>
+
+
+    <div>
+
+      <h3>महत्त्वाचे दुवे</h3>
+
+      <a href="#home">मुख्यपृष्ठ</a>
+      <a href="#about">आमच्याबद्दल</a>
+      <a href="#schemes">ठेव योजना</a>
+      <a href="#gold-loan">Gold Loan</a>
+      <a href="#contact">संपर्क</a>
+
+    </div>
+
+
+    <div>
+
+      <h3>संपर्क</h3>
+
+      <a href="tel:9922015399">📞 9922015399</a>
+
+      <a href="tel:8999151757">📞 8999151757</a>
+
+      <a href="mailto:kanakpatsanstha@gmail.com">
+        📧 Email
       </a>
 
-      <button class="menu-btn" aria-label="Menu" onclick="toggleMenu()">☰</button>
-
-      <nav id="nav">
-        <a href="#home" onclick="closeMenu()">मुख्यपृष्ठ</a>
-        <a href="#about" onclick="closeMenu()">आमच्याबद्दल</a>
-        <a href="#deposit" onclick="closeMenu()">ठेव योजना</a>
-        <a href="#gold-loan" onclick="closeMenu()">Gold Loan</a>
-        <a href="#contact" onclick="closeMenu()">संपर्क</a>
-      </nav>
     </div>
-  </header>
 
-  <main>
-    <section id="home" class="hero">
-      <div class="hero-overlay"></div>
-      <div class="container hero-content">
-        <div class="hero-text">
-          <span class="eyebrow">विश्वास • बचत • समृद्धी</span>
-          <h2>आपल्या आर्थिक स्वप्नांना<br><strong>विश्वासाची साथ</strong></h2>
-          <p>आपल्या बचतीसाठी आकर्षक ठेव सुविधा आणि आपल्या गरजांसाठी Gold Loan सुविधा.</p>
-          <div class="hero-buttons">
-            <a class="btn primary" href="#deposit">12% वार्षिक ठेव</a>
-            <a class="btn outline" href="#gold-loan">Gold Loan</a>
-          </div>
-        </div>
+  </div>
 
-        <div class="hero-cards">
-          <div class="highlight-card">
-            <span class="icon">₹</span>
-            <div>
-              <small>वार्षिक ठेव</small>
-              <strong>12%</strong>
-              <p>आकर्षक व्याजदर</p>
-            </div>
-          </div>
-          <div class="highlight-card">
-            <span class="icon">🪙</span>
-            <div>
-              <small>कर्ज सुविधा</small>
-              <strong>Gold Loan</strong>
-              <p>सोन्याच्या तारणावर कर्ज</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <section class="quick-stats">
-      <div class="container stats-grid">
-        <div><strong>12%</strong><span>वार्षिक ठेव</span></div>
-        <div><strong>Gold Loan</strong><span>सोन्याच्या तारणावर कर्ज</span></div>
-        <div><strong>3</strong><span>संपर्क क्रमांक</span></div>
-      </div>
-    </section>
+  <div class="copyright">
 
-    <section id="about" class="section">
-      <div class="container two-col">
-        <div>
-          <span class="section-tag">आमच्याबद्दल</span>
-          <h2>कनक पतसंस्थेत आपले स्वागत आहे</h2>
-          <p>
-            कनक महिला ग्रामीण बिगरशेती सहकारी पतसंस्था मर्या., पंढरपूर
-            ही सभासदांच्या आर्थिक गरजा लक्षात घेऊन ठेव व कर्ज सुविधा
-            उपलब्ध करून देणारी सहकारी पतसंस्था आहे.
-          </p>
-          <p>
-            बचत, आर्थिक नियोजन आणि आवश्यक वेळी कर्ज सुविधा यासाठी
-            आमच्याशी संपर्क साधा.
-          </p>
-        </div>
-        <div class="about-box">
-          <div class="about-logo"><img src="logo.jpg" alt="कनक पतसंस्था"></div>
-          <h3>विश्वास • सेवा • प्रगती</h3>
-          <p>सभासदांच्या आर्थिक प्रगतीसाठी समर्पित.</p>
-        </div>
-      </div>
-    </section>
+    © 2026 कनक महिला ग्रामीण बिगरशेती सहकारी पतसंस्था मर्या.
+    सर्व हक्क राखीव.
 
-    <section id="deposit" class="section light">
-      <div class="container">
-        <div class="section-heading">
-          <span class="section-tag">ठेव योजना</span>
-          <h2>आपल्या बचतीला आकर्षक परतावा</h2>
-          <p>आमच्या संस्थेत उपलब्ध ठेव सुविधांबद्दल अधिक माहितीसाठी कार्यालयाशी संपर्क साधा.</p>
-        </div>
+  </div>
 
-        <div class="feature-grid">
-          <article class="feature-card featured">
-            <div class="card-icon">₹</div>
-            <h3>वार्षिक ठेव</h3>
-            <div class="big-number">12%</div>
-            <p>वार्षिक ठेव योजनेवर आकर्षक व्याजदर.</p>
-            <a href="tel:9922015399" class="card-link">माहितीसाठी कॉल करा →</a>
-          </article>
+</footer>
 
-          <article class="feature-card">
-            <div class="card-icon">🏦</div>
-            <h3>बचत खाते</h3>
-            <p>दैनंदिन आर्थिक व्यवहारांसाठी सोयीस्कर बचत सुविधा.</p>
-            <a href="#contact" class="card-link">अधिक माहिती →</a>
-          </article>
 
-          <article class="feature-card">
-            <div class="card-icon">📅</div>
-            <h3>आवर्ती / मुदत ठेव</h3>
-            <p>आपल्या आर्थिक नियोजनानुसार विविध ठेव पर्यायांची माहिती मिळवा.</p>
-            <a href="#contact" class="card-link">चौकशी करा →</a>
-          </article>
-        </div>
+<!-- ================= JAVASCRIPT ================= -->
 
-        <p class="disclaimer">* 12% व्याजदर हा संस्थेने दिलेल्या माहितीनुसार दाखवला आहे. लागू अटी व नियमांसाठी संस्थेशी संपर्क साधावा.</p>
-      </div>
-    </section>
+<script>
 
-    <section id="gold-loan" class="gold-section">
-      <div class="container gold-content">
-        <div>
-          <span class="section-tag light-tag">मुख्य कर्ज सुविधा</span>
-          <h2>🪙 Gold Loan</h2>
-          <p>सोन्याच्या तारणावर कर्ज सुविधा. कर्जाची रक्कम, व्याजदर, कालावधी आणि आवश्यक कागदपत्रांसाठी आमच्या कार्यालयाशी संपर्क साधा.</p>
-          <div class="gold-points">
-            <span>✓ सोने तारण कर्ज</span>
-            <span>✓ सोपी चौकशी</span>
-            <span>✓ सभासदांसाठी सेवा</span>
-          </div>
-          <a class="btn light-btn" href="tel:9922015399">Gold Loan साठी संपर्क करा</a>
-        </div>
+  function toggleMenu() {
+    document.getElementById("nav").classList.toggle("active");
+  }
 
-        <div class="gold-card">
-          <div class="coin">🪙</div>
-          <h3>तुमच्या गरजांसाठी आर्थिक साथ</h3>
-          <p>Gold Loan विषयी सविस्तर माहिती घेण्यासाठी आजच संपर्क साधा.</p>
-          <a href="https://wa.me/919922015399?text=नमस्कार%2C%20मला%20Gold%20Loan%20बद्दल%20माहिती%20हवी%20आहे." target="_blank" rel="noopener" class="whatsapp-btn">WhatsApp वर चौकशी करा</a>
-        </div>
-      </div>
-    </section>
+  function closeMenu() {
+    document.getElementById("nav").classList.remove("active");
+  }
 
-    <section class="section">
-      <div class="container">
-        <div class="section-heading">
-          <span class="section-tag">आमच्या सेवा</span>
-          <h2>आर्थिक सेवांसाठी एक विश्वासू ठिकाण</h2>
-        </div>
-        <div class="service-grid">
-          <div class="service"><span>💰</span><h3>ठेव सुविधा</h3><p>आपल्या बचतीसाठी विविध ठेव पर्याय.</p></div>
-          <div class="service"><span>🪙</span><h3>Gold Loan</h3><p>सोन्याच्या तारणावर कर्ज सुविधा.</p></div>
-          <div class="service"><span>🤝</span><h3>सभासद सेवा</h3><p>सभासदांच्या गरजांनुसार मार्गदर्शन.</p></div>
-          <div class="service"><span>📞</span><h3>संपर्क सेवा</h3><p>योजना आणि कर्जाबाबत चौकशीसाठी संपर्क.</p></div>
-        </div>
-      </div>
-    </section>
+</script>
 
-    <section id="contact" class="section contact-section">
-      <div class="container">
-        <div class="section-heading">
-          <span class="section-tag">संपर्क</span>
-          <h2>आमच्याशी संपर्क साधा</h2>
-        </div>
-
-        <div class="contact-grid">
-          <div class="contact-card">
-            <span>📍</span>
-            <h3>पत्ता</h3>
-            <p>४७/भगवान नगर, भक्ती मार्ग,<br>पंढरपूर, ता. पंढरपूर,<br>जि. सोलापूर – ४१३३०४</p>
-          </div>
-
-          <div class="contact-card">
-            <span>📞</span>
-            <h3>फोन</h3>
-            <a href="tel:9922015399">9922015399</a>
-            <a href="tel:8999151757">8999151757</a>
-            <a href="tel:7276715399">7276715399</a>
-          </div>
-
-          <div class="contact-card">
-            <span>✉️</span>
-            <h3>Email</h3>
-            <a href="mailto:kanakpatsanstha@gmail.com">kanakpatsanstha@gmail.com</a>
-          </div>
-        </div>
-
-        <div class="contact-actions">
-          <a class="btn primary" href="tel:9922015399">📞 Call Now</a>
-          <a class="btn whatsapp" href="https://wa.me/919922015399?text=नमस्कार%2C%20मला%20कनक%20पतसंस्थेबद्दल%20माहिती%20हवी%20आहे." target="_blank" rel="noopener">💬 WhatsApp</a>
-          <a class="btn map" href="https://www.google.com/maps/search/?api=1&query=Bhagwan+Nagar+Bhakti+Marg+Pandharpur+Maharashtra" target="_blank" rel="noopener">📍 Google Maps</a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container footer-wrap">
-      <div>
-        <h3>कनक महिला ग्रामीण बिगरशेती सहकारी पतसंस्था मर्या.</h3>
-        <p>पंढरपूर</p>
-      </div>
-      <p>© <span id="year"></span> Kanak Patsanstha. सर्व हक्क राखीव.</p>
-    </div>
-  </footer>
-
-  <script>
-    function toggleMenu() {
-      document.getElementById("nav").classList.toggle("show");
-    }
-    function closeMenu() {
-      document.getElementById("nav").classList.remove("show");
-    }
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
